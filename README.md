@@ -10,6 +10,7 @@ question will be recipes that someone can follow to reproduce your development s
  
    Steps are explained below professor
 Steps followed:
+
 1.	Update the files arch/x86/kvm/vmx/vmx.c and arch/x86/kvm/cpuid.c
 2.	Rebuild the kernel using make modules command and make INSTALL_MOD_STRIP=1 modules_install && make install.
 3.	Run lsmod | grep kvm to check if the kvm modules are preloaded.
