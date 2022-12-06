@@ -2,13 +2,13 @@
 1. For each member in your team, provide 1 paragraph detailing what parts of the lab that member 
 implemented / researched. (You may skip this question if you are doing the lab by yourself).
 
- ans.)I have done it alone professor
+   I have done it alone professor
 
 2. Describe in detail the steps you used to complete the assignment. Consider your reader to be someone 
 skilled in software development but otherwise unfamiliar with the assignment. Good answers to this 
 question will be recipes that someone can follow to reproduce your development steps.
  
-  ans.)Steps are explained below professor
+   Steps are explained below professor
 Steps followed:
 1.	Update the files arch/x86/kvm/vmx/vmx.c and arch/x86/kvm/cpuid.c
 2.	Rebuild the kernel using make modules command and make INSTALL_MOD_STRIP=1 modules_install && make install.
