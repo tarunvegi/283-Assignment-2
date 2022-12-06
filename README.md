@@ -1,16 +1,20 @@
 # 283-Assignment-2
-1. For each member in your team, provide 1 paragraph detailing what parts of the lab that member 
+
+ For each member in your team, provide 1 paragraph detailing what parts of the lab that member 
 implemented / researched. (You may skip this question if you are doing the lab by yourself).
 
-   I have done it alone professor
+I have done it alone professor
 
-2. Describe in detail the steps you used to complete the assignment. Consider your reader to be someone 
+
+ Describe in detail the steps you used to complete the assignment. Consider your reader to be someone 
 skilled in software development but otherwise unfamiliar with the assignment. Good answers to this 
 question will be recipes that someone can follow to reproduce your development steps.
- 
-   Steps are explained below professor
-Steps followed:
 
+Steps are explained below professor
+
+
+
+Steps followed:
 1.	Update the files arch/x86/kvm/vmx/vmx.c and arch/x86/kvm/cpuid.c
 2.	Rebuild the kernel using make modules command and make INSTALL_MOD_STRIP=1 modules_install && make install.
 3.	Run lsmod | grep kvm to check if the kvm modules are preloaded.
@@ -38,13 +42,19 @@ sudo apt install libvirt-clients libvirt-daemon-system virtinst
 13.	Run the command cpuid -l 0x4FFFFFFF to verify the output.
 14.	Run the test bash script to produce results and print number of exits.
 15.	Run the test2 bash script to produce number of cycles in ebx and ecx registers when eax=0x4ffffffe.
-Output screen that verifies that kvm is installed on Ubuntu host
+         
+      Output screen that verifies that kvm is installed on Ubuntu host.                                                   ![283-1](https://user-images.githubusercontent.com/37550226/205851921-abfc6ef7-16ed-43d9-b4be-0b85d774c330.jpg)
+
+Output screen that shows nested VM created on KVM Host                            
+![283-2](https://user-images.githubusercontent.com/37550226/205851923-442d253a-726b-48a4-8d3b-1472656ce467.png)
+
+
+ 
+ 
+ 
+Output screen that shows number of exits when eax=0x4fffffff ![283-3](https://user-images.githubusercontent.com/37550226/205851951-427425b0-7670-41ca-8ae3-f4601490019f.png)
  
 
-Output screen that shows nested VM created on KVM Host
- https://github.com/tarunvegi/283-Assignment-2/blob/main/283-1.jpg
- 
-Output screen that shows number of exits when eax=0x4fffffff
  
 
 
