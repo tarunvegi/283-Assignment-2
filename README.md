@@ -83,7 +83,7 @@ Here, 5116977 number of exits are not stable and keeps changing.
 Exit 48:EPT Violation, Exit 1: External Interrupt, Exit 30: IO Interrupt, Exit 32:WRMSR -> Most Frequently occuring. Exit 29: MOV DR, Exit 46: Access to IDTR, Exit 55 XSETBV -> Least Frequently occuring.
  
 
-![Img4](https://user-images.githubusercontent.com/37550226/207257912-bffc08e9-d637-4c6b-b790-27667fc3d6f2.jpeg)
+
 ![Img3](https://user-images.githubusercontent.com/37550226/207257918-1724f027-65a4-4326-9b09-95e953ff8494.jpeg)
 ![Img2](https://user-images.githubusercontent.com/37550226/207257920-870afa63-d4bd-4115-935d-ad1eef3277b7.jpeg)
 ![Img1](https://user-images.githubusercontent.com/37550226/207257924-54f63af9-a589-4f37-b9c9-33e5610c0764.jpeg)
