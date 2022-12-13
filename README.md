@@ -1,4 +1,4 @@
-# 283-Assignment-2
+# 283-Assignment-2&3
 
  For each member in your team, provide 1 paragraph detailing what parts of the lab that member 
 implemented / researched. (You may skip this question if you are doing the lab by yourself).
@@ -53,7 +53,40 @@ Output screen that shows nested VM created on KVM Host
  
  
 Output screen that shows number of exits when eax=0x4fffffff ![283-3](https://user-images.githubusercontent.com/37550226/205851951-427425b0-7670-41ca-8ae3-f4601490019f.png)
+
+
+Assignment-3
+I had done it alone.
+
+fisrtly, Go to the assignment 2 setup VM
+
+Then, update cpuid.c and vmx.c as per the desired requirements
+
+Thn use the following command "make -j 8 modules", (8 is number of CPU's, I have 8 in my VM. Find CPU's using "nproc" command)
+
+Then use command "make -j 8".
+
+Late, use command "sudo make INSTALL_MOD_STRIP=1 modules_install".
+
+Then, Reboot the VM using a "sudo reboot"
+
+Later, open the Virtual Machine created using virtual manager.
+
+Then, create test.c file and run it to get required output.
+
+Later, on the frequency of exits – does the number of exits increase at a stable rate? Or are there more exits performed during certain VM operations? Approximately how many exits does a full VM boot entail?
+
+Here, 5116977 number of exits are not stable and keeps changing.
+
+-> Of the exit types defined in the SDM, which are the most frequent? Least?
+
+Exit 48:EPT Violation, Exit 1: External Interrupt, Exit 30: IO Interrupt, Exit 32:WRMSR -> Most Frequently occuring. Exit 29: MOV DR, Exit 46: Access to IDTR, Exit 55 XSETBV -> Least Frequently occuring.
  
+
+![Img4](https://user-images.githubusercontent.com/37550226/207257912-bffc08e9-d637-4c6b-b790-27667fc3d6f2.jpeg)
+![Img3](https://user-images.githubusercontent.com/37550226/207257918-1724f027-65a4-4326-9b09-95e953ff8494.jpeg)
+![Img2](https://user-images.githubusercontent.com/37550226/207257920-870afa63-d4bd-4115-935d-ad1eef3277b7.jpeg)
+![Img1](https://user-images.githubusercontent.com/37550226/207257924-54f63af9-a589-4f37-b9c9-33e5610c0764.jpeg)
 
  
 
